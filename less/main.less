@@ -1,0 +1,47 @@
+/* ----------*/
+/* VARIABLES */
+/* ----------*/
+
+@color-white: #fff;
+@color-black: #111;
+@color-blue: #0088d8;
+@color-red: #ce0505;
+@color-light-pink: #ffc6c6;
+
+/* ----------------- */
+/* CEICOM MUSIC LIST */
+/* ----------------- */
+
+.cml-music-list-wrapper {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+
+    .cml-music-list {
+        list-style: none;
+        background: @color-black;
+        max-height: 300px;
+        margin: 1px -20px 0 0;
+        padding: 0;
+        overflow-y: auto; 
+        
+        .music-item {
+            color: @color-white;
+            padding: 10px 15px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            &.active {
+                background-color: @color-blue;
+            }
+            & + .music-item {
+                border-top: 1px solid @color-white;
+            }
+        }
+        
+        .music-item.error {
+            color: @color-red;
+            background-color: @color-light-pink;
+        }
+    }
+}
