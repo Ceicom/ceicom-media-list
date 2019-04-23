@@ -71,9 +71,5 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   // commonjs
 
 
-  if (typeof exports !== "undefined") {
-    exports.CeicomMediaList = CeicomMediaList;
-  } else {
-    window.CeicomMediaList = CeicomMediaList;
-  }
+  if (typeof exports !== "undefined") exports.CeicomMediaList = CeicomMediaList;else window.CeicomMediaList = CeicomMediaList;
 })(typeof global !== "undefined" ? global : void 0);

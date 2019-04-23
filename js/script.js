@@ -48,10 +48,9 @@
     /**********************************/
 
     // commonjs
-    if (typeof exports !== "undefined") {
+    if (typeof exports !== "undefined")
         exports.CeicomMediaList = CeicomMediaList;
-    } else {
+    else
         window.CeicomMediaList = CeicomMediaList;
-    }
 
 }(typeof global !== "undefined" ? global : this));
